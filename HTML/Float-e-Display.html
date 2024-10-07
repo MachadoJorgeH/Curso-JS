@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: sans-serif;
+        }
+
+        .grid {
+            max-width: 1200px;
+            padding: 15px;
+            margin: 0 auto;
+            padding-top: 73px;
+        }
+
+        .grid::after {
+            content: "";
+            display: block;
+            clear: both;
+
+        }
+
+        .grid .col {
+            width: 100px;
+            height: 100px;
+            background: red;
+            margin: 30px;
+            float: left;
+            border-radius: 50%;
+            box-shadow: inset 5px 5px 15px 5px blue, 5px 5px 5px 5px rgba(0,0,0,.5);
+        }
+
+        .menu {
+            width: 100%;
+            position: fixed;
+            background: black;
+        }
+        .menu ul {
+            list-style: none;
+            display: block;
+            max-width: 1200px;
+            padding: 0 30px;
+            margin: 0 auto;
+        }
+        .menu ul li {
+            float: left;
+        }
+        .menu ul li a {
+            display: block;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+            transition: all 300ms ease-in-out;
+        }
+        .menu ul li a:hover {
+            background: #333;
+
+        }
+        .full-page {
+            max-width: 100%;
+            padding-top: 73px;
+            height: 100vh;
+            background: turquoise;
+        }
+        .full-page-content {
+            max-width: 1200px;
+            padding: 0 30px;
+            margin: 0 auto;
+
+        }
+        @media all and (max-widht:568px) {
+            .grid .col {
+                width: 100%;
+        }
+    }
+    @media all and (min-widht:569px) and (max-widht:768px) {
+            .grid .col {
+                width: 50%;
+        }
+    }
+    @media all and (min-widht:769px) and (max-widht:1200px) {
+            .grid .col {
+                width: 33.33%;
+        }
+    }
+    @media all and (min-widht:1200px){
+            .grid .col {
+                width: 25%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#full-page">Full Page</a></li>
+        </ul>
+    </nav>
+    <div id="home"class="grid">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+        <section id="full-page" class="full-page">
+            <div class="full-page-content">
+                <h1>Lorem ipsum</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo numquam labore dolorem accusamus, amet incidunt beatae harum similique provident officiis possimus corporis distinctio magnam ad. A tempore praesentium numquam consectetur.</p>
+            </div>
+        </section>
+</body>
+</html>

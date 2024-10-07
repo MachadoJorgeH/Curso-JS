@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img-in-text{
+            width: 50px;
+            height: 50px;
+        }
+        .vermelho{
+            font-size: 24px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="background: red;">Cabeçalho</h1>
+    <nav>
+        <ul>
+          <li><a href="#">Página inicial</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+        <ol>
+            <li>primeiro item</li>
+            <li>
+              segundo item
+              <!-- Veja que a tag de fechamento </li> não é colocada aqui! -->
+              <ol>
+                <li>segundo item primeiro subitem</li>
+                <li>segundo item segundo subitem</li>
+                <li>segundo item terceiro subitem</li>
+              </ol>
+            </li>
+            <!-- Aqui está a tag de fechamento </li> -->
+            <li>terceiro item</li>
+          </ol>
+      </nav>
+    <p><b>Lorem</b> <strong>ipsum</strong> <i>dolor</i> <em>sit</em> <a href="https://validator.w3.org/nu/#textarea" target="_blank">amet</a> 
+        <a href="https://validator.w3.org/nu/#textarea" target="_blank">
+        <img class="img-in-text" src="https://live.mdnplay.dev/pt-BR/docs/Web/CSS/object-fit/mdn_logo_only_color.png" alt="Logo da MDN" ></a>
+        <del>vermelho</del><ins>Azul</ins><br>
+        <q cite="https://validator.w3.org/nu/#textarea">This tool is an ongoing experiment in better HTML checking, and its behavior remains subject to change </q><br>
+        <s>consectetur</s> <u>adipisicing</u> <small>elit.</small> 2<sup>2</sup> H<sub>2</sub>O <br>Iure adipisci sint amet, deserunt repudiandae architecto dignissimos tempore officiis?<br> Impedit ea sunt optio eligendi facere quibusdam blanditiis. Dignissimos inventore et esse?</p>
+    <hr>
+        <Blockquote cite="https://validator.w3.org/nu/#textarea"><p>Aqui sim estou fazendo um bloco de citação.</p></Blockquote>
+        <code>Console.log </code>
+<pre>    
+            Var
+            nomealuno: caracter
+            nota1, nota2, nota3, nota4: real
+            somanotas, media: real
+            Inicio
+             Escreva("Digite o nome do aluno: ")
+                Leia(nomealuno)
+            
+                Escreva("Digite a primeira nota: ")
+                Leia(nota1)           
+        </pre>
+        <p><span class="vermelho">Lorem</span> ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus fugiat dicta ratione minus quam ullam laudantium optio amet<div class="vermelho">Eu sou um bloco não inline</div> soluta neque dignissimos <span class="vermelho">numquam, dolorem, consequatur nisi deleniti </span>numquam, dolorem, consequatur nisi deleniti voluptatem sunt quaerat?</p>
+<div class="vermelho">Eu sou um bloco.</div>
+    </body> 
+</html>
